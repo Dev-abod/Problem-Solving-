@@ -42,14 +42,11 @@ void PrintPrimeNumber(int Number)
 			cout << i << endl;
 		}
 	}
-
 }
-
 
 int main()
 {
 	PrintPrimeNumber(ReadNumberPositive());
 
-	
-    
+    system("pause>0");
 }
