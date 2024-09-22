@@ -35,7 +35,7 @@ void PrintResult(int Number)
 	if (IsPerfectNumber(Number))
 		cout << Number << " Is Perfect Number" << endl;
 	else
-		cout << Number << " Is Perfect Number" << endl;
+		cout << Number << " Is not Perfect Number" << endl;
 }
 
 int main()
