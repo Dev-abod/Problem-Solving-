@@ -3,9 +3,6 @@
 #include <math.h>
 using namespace std;
 
-
-
-
 int ReadNumberPositive(string Massage)
 {
 	int Number;
@@ -18,7 +15,7 @@ int ReadNumberPositive(string Massage)
 	return Number;
 }
 
-bool PrintPerfect(int Number)
+bool IsPerfectNumber(int Number)
 {
 	int Sum = 0;
 
@@ -30,25 +27,18 @@ bool PrintPerfect(int Number)
 		}
 	}
 	return Sum == Number;
-
-	
 }
 
 void PrintResult(int Number)
 {
-	if (PrintPerfect(Number))
-		cout << Number << " is Perfect Number\n";
+
+	if (IsPerfectNumber(Number))
+		cout << Number << " Is Perfect Number" << endl;
 	else
-		cout << Number << " Is Not Perfect Number\n";
+		cout << Number << " Is Perfect Number" << endl;
 }
-
-
-
 
 int main()
 {
-	PrintResult(ReadNumberPositive("enter numbern"));
-
-
-	
+	PrintResult(ReadNumberPositive("enter number Positive"));
 }
